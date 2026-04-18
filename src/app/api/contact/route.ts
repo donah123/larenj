@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
+import { Resend } from 'resend';
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: NextRequest) {
   try {
@@ -13,18 +15,8 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: Number(process.env.SMTP_PORT) || 587,
-      secure: process.env.SMTP_SECURE === 'true',
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASSWORD,
-      },
-    });
-
-    await transporter.sendMail({
-      from: `"Larenj Website" <${process.env.SMTP_USER}>`,
+    await resend.emails.send({
+      from: 'Larenj Website <onboarding@resend.dev>',
       to: 'admin@larenj.ca',
       replyTo: email,
       subject: `New Contact Form Submission${service ? ` — ${service}` : ''}`,
