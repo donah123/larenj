@@ -1,10 +1,8 @@
-import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export default function About() {
   return (
     <>
-      <Header />
       <main>
         {/* Hero Section */}
         <section className="relative h-[921px] flex items-center overflow-hidden bg-surface">

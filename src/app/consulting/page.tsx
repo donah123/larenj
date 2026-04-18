@@ -1,11 +1,9 @@
 import Link from 'next/link';
-import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export default function ConsultingPage() {
   return (
     <div className="min-h-screen bg-surface">
-      <Header />
 
       {/* Hero Section */}
       <section className="px-4 md:px-12 py-32 bg-gradient-to-br from-surface to-surface-container-low">

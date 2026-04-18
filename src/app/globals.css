@@ -63,3 +63,50 @@ body {
   color: var(--foreground);
   font-family: var(--font-body);
 }
+
+.hero-bg {
+  animation: hero-bg-zoom 20s ease-in-out infinite alternate;
+  transform-origin: center center;
+}
+
+.hero-section {
+  background: radial-gradient(circle at top right, rgba(242, 202, 80, 0.08), transparent 40%), radial-gradient(circle at bottom left, rgba(242, 202, 80, 0.04), transparent 30%);
+}
+
+.hero-fade {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: hero-fade-in 0.9s ease-out forwards;
+}
+
+.hero-fade-delay {
+  animation-delay: 0.2s;
+}
+
+.hero-fade-delay-2 {
+  animation-delay: 0.35s;
+}
+
+.hero-fade-delay-3 {
+  animation-delay: 0.55s;
+}
+
+@keyframes hero-bg-zoom {
+  from {
+    transform: scale(1.02);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes hero-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

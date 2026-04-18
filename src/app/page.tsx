@@ -1,32 +1,30 @@
 import Link from 'next/link';
-import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
     <>
-      <Header />
       <main className="pt-24">
         {/* Hero Section */}
-        <section className="relative min-h-screen flex items-center overflow-hidden">
+        <section className="relative min-h-screen flex items-center overflow-hidden hero-section">
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-gradient-to-r from-surface to-transparent z-10"></div>
-            <img className="w-full h-full object-cover opacity-30" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=1080&fit=crop&crop=center" alt="Modern corporate skyscrapers" />
+            <img className="w-full h-full object-cover opacity-30 hero-bg" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=1080&fit=crop&crop=center" alt="Modern corporate skyscrapers" />
           </div>
           <div className="container mx-auto px-12 relative z-20">
             <div className="max-w-4xl">
-              <span className="text-primary font-label uppercase tracking-[0.3em] text-sm mb-6 block">Established Global Authority</span>
-              <h1 className="text-7xl md:text-8xl font-headline font-bold text-on-background leading-[1.1] tracking-tight mb-8">
+              <span className="text-primary font-label uppercase tracking-[0.3em] text-sm mb-6 block hero-fade">Established Global Authority</span>
+              <h1 className="text-7xl md:text-8xl font-headline font-bold text-on-background leading-[1.1] tracking-tight mb-8 hero-fade hero-fade-delay">
                 The Architect of <br/><span className="italic text-primary">Sovereign Futures</span>
               </h1>
-              <p className="text-xl text-on-surface-variant font-body max-w-2xl leading-relaxed mb-12">
+              <p className="text-xl text-on-surface-variant font-body max-w-2xl leading-relaxed mb-12 hero-fade hero-fade-delay-2">
                 Navigating the complexities of global citizenship, executive mobility, and strategic enterprise consulting with unparalleled discretion and institutional precision.
               </p>
-              <div className="flex gap-6">
-                <Link href="/contact" className="bg-gradient-to-r from-primary to-primary-container px-10 py-4 rounded-md text-on-primary font-bold tracking-wider text-lg shadow-xl">
+              <div className="flex gap-6 hero-fade hero-fade-delay-3">
+                <Link href="/contact" className="bg-gradient-to-r from-primary to-primary-container px-10 py-4 rounded-md text-on-primary font-bold tracking-wider text-lg shadow-xl transition-transform duration-500 hover:-translate-y-1">
                   Request Consultation
                 </Link>
-                <button className="border border-outline-variant/30 px-10 py-4 rounded-md text-on-background font-bold tracking-wider text-lg hover:bg-surface-container-high transition-colors">
+                <button className="border border-outline-variant/30 px-10 py-4 rounded-md text-on-background font-bold tracking-wider text-lg hover:bg-surface-container-high transition-colors duration-300">
                   Our Methodology
                 </button>
               </div>

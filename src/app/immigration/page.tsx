@@ -1,10 +1,8 @@
-import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export default function ImmigrationPage() {
   return (
     <div className="min-h-screen bg-surface">
-      <Header />
 
       {/* Hero Section */}
       <section className="px-4 md:px-12 py-20 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-16 items-center">

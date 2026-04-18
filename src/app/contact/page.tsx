@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export default function Contact() {
@@ -52,7 +51,6 @@ export default function Contact() {
 
   return (
     <>
-      <Header />
       <main className="pt-24">
         {/* Hero Section */}
         <section className="py-32 bg-surface">

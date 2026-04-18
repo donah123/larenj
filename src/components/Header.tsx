@@ -17,37 +17,37 @@ export default function Header() {
 
   return (
     <>
-      <nav className="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-lg shadow-[0px_24px_48px_rgba(0,0,0,0.4)]">
+      <nav className="fixed top-0 w-full z-50 bg-surface/95 border-b border-surface-container-high backdrop-blur-lg shadow-[0px_24px_48px_rgba(0,0,0,0.4)]">
         <div className="flex justify-between items-center w-full px-4 md:px-12 py-6 max-w-[1920px] mx-auto">
           <Link href="/" className="flex items-center gap-2 md:gap-4" onClick={closeMobileMenu}>
             <Image
-              src="/logo.svg"
+              src="/logo1.png"
               alt="Larenj International Logo"
-              width={32}
-              height={32}
+              width={70}
+              height={70}
               className="rounded"
             />
             <span className="text-lg md:text-2xl font-headline font-bold text-primary tracking-tighter">
               Larenj International
             </span>
           </Link>
-          <div className="hidden md:flex gap-10 items-center">
-            <Link className="text-on-surface font-medium hover:text-primary transition-all duration-300" href="/consulting">
+          <div className="flex flex-1 flex-wrap justify-end gap-4 items-center">
+            <Link className="text-white font-medium hover:text-primary transition-all duration-300" href="/consulting">
               Consulting
             </Link>
-            <Link className="text-on-surface font-medium hover:text-primary transition-all duration-300" href="/immigration">
+            <Link className="text-white font-medium hover:text-primary transition-all duration-300" href="/immigration">
               Immigration
             </Link>
-            <Link className="text-on-surface font-medium hover:text-primary transition-all duration-300" href="/employment">
+            <Link className="text-white font-medium hover:text-primary transition-all duration-300" href="/employment">
               Employment
             </Link>
-            <Link className="text-on-surface font-medium hover:text-primary transition-all duration-300" href="/careers">
+            <Link className="text-white font-medium hover:text-primary transition-all duration-300" href="/careers">
               Careers
             </Link>
-            <Link className="text-on-surface font-medium hover:text-primary transition-all duration-300" href="/about">
+            <Link className="text-white font-medium hover:text-primary transition-all duration-300" href="/about">
               About
             </Link>
-            <Link className="text-on-surface font-medium hover:text-primary transition-all duration-300" href="/contact">
+            <Link className="text-white font-medium hover:text-primary transition-all duration-300" href="/contact">
               Contact
             </Link>
           </div>
@@ -55,7 +55,7 @@ export default function Header() {
           <div className="md:hidden">
             <button
               onClick={toggleMobileMenu}
-              className="text-on-surface p-2 hover:text-primary transition-colors"
+              className="text-white p-2 hover:text-primary transition-colors"
               aria-label="Toggle mobile menu"
             >
               <span className="material-symbols-outlined text-2xl">
