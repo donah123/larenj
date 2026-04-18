@@ -167,16 +167,16 @@ export default function Contact() {
                 <span className="material-symbols-outlined text-primary text-4xl mb-4">location_on</span>
                 <h3 className="text-xl font-headline font-bold text-on-background mb-4">Global Headquarters</h3>
                 <p className="text-on-surface-variant">
-                  123 Sovereign Square<br />
-                  London, EC2A 1PQ<br />
-                  United Kingdom
+                  44 Veterans Street<br />
+                  Bradford, L3Z 4L4<br />
+                  Canada
                 </p>
               </div>
               <div className="text-center">
                 <span className="material-symbols-outlined text-primary text-4xl mb-4">phone</span>
                 <h3 className="text-xl font-headline font-bold text-on-background mb-4">Direct Line</h3>
                 <p className="text-on-surface-variant">
-                  +44 20 7123 4567<br />
+                  +1 647-704-6453<br />
                   Available 24/7<br />
                   Encrypted Communication
                 </p>
@@ -185,7 +185,7 @@ export default function Contact() {
                 <span className="material-symbols-outlined text-primary text-4xl mb-4">email</span>
                 <h3 className="text-xl font-headline font-bold text-on-background mb-4">Secure Inquiry</h3>
                 <p className="text-on-surface-variant">
-                  confidential@larenj.int<br />
+                  admin@larenj.ca<br />
                   PGP Encrypted<br />
                   Response within 24 hours
                 </p>

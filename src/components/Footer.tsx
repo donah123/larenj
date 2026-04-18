@@ -8,10 +8,10 @@ export default function Footer() {
         <div className="space-y-6">
           <div className="flex items-center gap-4">
             <Image
-              src="/logo.svg"
+              src="/logo1.png"
               alt="Larenj International Logo"
-              width={40}
-              height={40}
+              width={70}
+              height={70}
               className="rounded"
             />
             <div className="font-headline text-xl text-primary">Larenj International</div>

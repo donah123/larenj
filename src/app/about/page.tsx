@@ -12,7 +12,7 @@ export default function About() {
           </div>
           <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-12 w-full">
             <div className="max-w-4xl">
-              <span className="text-primary tracking-[0.3em] uppercase text-sm mb-6 block font-semibold">Established 1994</span>
+           
               <h1 className="font-headline text-4xl md:text-7xl lg:text-9xl text-on-surface leading-[0.9] tracking-tighter mb-8">
                 Our Heritage: Architects of <span className="italic text-primary">Global</span> Opportunity
               </h1>
@@ -94,50 +94,7 @@ export default function About() {
           </div>
         </section>
 
-        {/* Leadership Section */}
-        <section className="py-32 bg-surface-container-low">
-          <div className="max-w-screen-2xl mx-auto px-8">
-            <div className="text-center mb-24">
-              <h2 className="font-headline text-5xl text-on-surface mb-4">The <span className="italic">Architects</span> of Strategy</h2>
-              <p className="text-on-surface-variant tracking-widest uppercase text-sm">Guided by decades of unparalleled expertise</p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Leader 1 */}
-              <div className="group bg-surface-container-high p-8 hover:bg-surface-bright transition-all duration-500">
-                <div className="aspect-[3/4] mb-8 overflow-hidden">
-                  <img alt="Marcus Sterling" className="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3IAg9UYMgqqgcUAbilAY8fOtstlL9EoFTbktBasJ549LrlCit09afQkRLCAGN2bkULMDw_j0HGQFLGMae1NlVsriFsHwzincCeusmxmYGDoXFsSH93Ri3GpoXgU9sIesFIvn5JISDbk4eaygyg3vzEEx8eTWy7shvsAjx4tXDk3SP4JdFhnaqq73o-TbzFLN382oNeuY64Rbq28mTu-G6hHUDdVGop-2MNPeJY4qBYNqNgond0vux02ciD9uZFyJqb_S_zXgvzw" />
-                </div>
-                <h3 className="font-headline text-2xl mb-1">Marcus Sterling</h3>
-                <p className="text-primary uppercase tracking-widest text-xs font-bold mb-4">Managing Director</p>
-                <p className="text-sm text-on-surface-variant leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  A former advisor to sovereign wealth funds, Marcus oversees the strategic direction of Larenj International.
-                </p>
-              </div>
-              {/* Leader 2 */}
-              <div className="group bg-surface-container-high p-8 hover:bg-surface-bright transition-all duration-500 mt-0 md:mt-12">
-                <div className="aspect-[3/4] mb-8 overflow-hidden">
-                  <img alt="Elena Voshkod" className="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80" />
-                </div>
-                <h3 className="font-headline text-2xl mb-1">Elena Voshkod</h3>
-                <p className="text-primary uppercase tracking-widest text-xs font-bold mb-4">VP Talent Acquisition</p>
-                <p className="text-sm text-on-surface-variant leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  Elena directs our global network of experts, ensuring every jurisdiction is manned by the world's sharpest legal minds.
-                </p>
-              </div>
-              {/* Leader 3 */}
-              <div className="group bg-surface-container-high p-8 hover:bg-surface-bright transition-all duration-500 mt-0 md:mt-24">
-                <div className="aspect-[3/4] mb-8 overflow-hidden">
-                  <img alt="David Chen" className="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHaC5tV5x-InZhY99-eXxy16ccfkK1xUygqgQR8zEyt3kQfZ86jbgaj0WRatBAjSjXlF0kqF_JPO69VBKKqRpgS9KgstO-XD_raBnRydCMTpDmR9jN1O-gNHdYBLusLkwStX0UADURZgZVZ9NH-9trm-j1ws104-G3aPHmuOS4E0gegWW4bqKpfaRQMGwmhHF1sDCT0A9GJ5ioOuKCuBGI7kAGAKyVjhC7hStANaAqZT673lQZnQUK2R7L5JmkUCKz5EAaNR0piw" />
-                </div>
-                <h3 className="font-headline text-2xl mb-1">David Chen</h3>
-                <p className="text-primary uppercase tracking-widest text-xs font-bold mb-4">Head of Strategic Partnerships</p>
-                <p className="text-sm text-on-surface-variant leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  David manages institutional alliances across four continents, fostering the ecosystems that empower our clients.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+
 
         {/* CTA Section */}
         <section className="py-24 bg-surface text-center px-8 border-y border-outline-variant/10">

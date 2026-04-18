@@ -80,8 +80,8 @@ export default function Careers() {
               <div className="relative">
                 <select className="w-full bg-surface-container-low border-b border-outline-variant/40 focus:border-primary focus:ring-0 text-on-surface py-4 px-4 transition-all outline-none appearance-none">
                   <option>Global Locations</option>
-                  <option>London, UK</option>
-                  <option>Dubai, UAE</option>
+                  <option>Toronto</option>
+                  <option>GTA</option>
                   <option>Remote</option>
                 </select>
                 <span className="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none">expand_more</span>
@@ -122,7 +122,7 @@ export default function Careers() {
               </div>
               <h3 className="text-2xl font-headline font-bold text-on-surface">Director of Global Logistics</h3>
               <div className="flex items-center gap-4 text-on-surface-variant text-sm">
-                <span className="flex items-center gap-1"><span className="material-symbols-outlined text-sm">location_on</span> Dubai, UAE</span>
+                <span className="flex items-center gap-1"><span className="material-symbols-outlined text-sm">location_on</span> Toronto, Canada</span>
                 <span className="flex items-center gap-1"><span className="material-symbols-outlined text-sm">schedule</span> Posted 5 days ago</span>
               </div>
             </div>
@@ -143,7 +143,7 @@ export default function Careers() {
               </div>
               <h3 className="text-2xl font-headline font-bold text-on-surface">Compliance & Sovereignty Specialist</h3>
               <div className="flex items-center gap-4 text-on-surface-variant text-sm">
-                <span className="flex items-center gap-1"><span className="material-symbols-outlined text-sm">location_on</span> Remote / Europe</span>
+                <span className="flex items-center gap-1"><span className="material-symbols-outlined text-sm">location_on</span> Remote / Canada</span>
                 <span className="flex items-center gap-1"><span className="material-symbols-outlined text-sm">schedule</span> Posted 1 week ago</span>
               </div>
             </div>
