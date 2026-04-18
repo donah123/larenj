@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0f131c;
+  --foreground: #dfe2ef;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-outline: #99907c;
+  --color-on-background: #dfe2ef;
+  --color-on-secondary-fixed: #111c2d;
+  --color-on-tertiary-fixed-variant: #5d4201;
+  --color-on-tertiary-container: #5b4000;
+  --color-on-primary-fixed: #241a00;
+  --color-on-secondary-container: #aeb9d0;
+  --color-tertiary-container: #d3ad65;
+  --color-error: #ffb4ab;
+  --color-on-surface-variant: #d0c5af;
+  --color-on-tertiary: #412d00;
+  --color-surface-dim: #0f131c;
+  --color-surface-tint: #e9c349;
+  --color-surface-bright: #353943;
+  --color-primary-fixed: #ffe088;
+  --color-inverse-surface: #dfe2ef;
+  --color-surface-container-low: #181b25;
+  --color-on-primary: #3c2f00;
+  --color-outline-variant: #4d4635;
+  --color-secondary-fixed-dim: #bcc7de;
+  --color-on-surface: #dfe2ef;
+  --color-on-secondary-fixed-variant: #3c475a;
+  --color-secondary-fixed: #d8e3fb;
+  --color-inverse-on-surface: #2c303a;
+  --color-primary-container: #d4af37;
+  --color-tertiary: #f1c97d;
+  --color-surface: #0f131c;
+  --color-secondary-container: #3e495d;
+  --color-primary: #f2ca50;
+  --color-inverse-primary: #735c00;
+  --color-on-primary-fixed-variant: #574500;
+  --color-tertiary-fixed: #ffdea5;
+  --color-on-tertiary-fixed: #261900;
+  --color-on-primary-container: #554300;
+  --color-on-secondary: #263143;
+  --color-on-error-container: #ffdad6;
+  --color-surface-variant: #31353f;
+  --color-on-error: #690005;
+  --color-primary-fixed-dim: #e9c349;
+  --color-tertiary-fixed-dim: #e9c176;
+  --color-surface-container: #1c1f29;
+  --color-surface-container-highest: #31353f;
+  --color-surface-container-high: #262a34;
+  --color-surface-container-lowest: #0a0e17;
+  --color-error-container: #93000a;
+  --font-headline: 'Noto Serif', serif;
+  --font-body: 'Manrope', sans-serif;
+  --font-label: 'Manrope', sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
