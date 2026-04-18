@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Footer from '@/components/Footer';
 import HeroSlider from '@/components/HeroSlider';
 
@@ -86,9 +87,9 @@ export default function Home() {
                     <p className="text-sm uppercase tracking-[0.3em] text-primary mb-2">The Hunters and the Flock Keepers</p>
                     <p className="text-on-surface font-bold text-xl">By David Ayo Akerele</p>
                   </div>
-                  <button className="inline-flex items-center gap-2 border border-primary px-6 py-3 rounded-full text-primary font-bold uppercase tracking-[0.2em] hover:bg-primary/10 transition-colors">
+                  <Link href="/publications" className="inline-flex items-center gap-2 border border-primary px-6 py-3 rounded-full text-primary font-bold uppercase tracking-[0.2em] hover:bg-primary/10 transition-colors">
                     Explore Publication
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -126,12 +127,12 @@ export default function Home() {
               Join the thousands of professionals and organizations that have elevated their potential through Larenj’s world-class training.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a className="bg-surface text-primary px-10 py-4 rounded-full font-bold uppercase tracking-[0.2em] hover:bg-surface/90 transition-colors" href="#">
+              <Link href="/contact" className="bg-surface text-primary px-10 py-4 rounded-full font-bold uppercase tracking-[0.2em] hover:bg-surface/90 transition-colors">
                 Get Started Today
-              </a>
-              <a className="border border-on-primary-container px-10 py-4 rounded-full font-bold uppercase tracking-[0.2em] hover:bg-on-primary-container/10 transition-colors" href="#">
+              </Link>
+              <Link href="/contact" className="border border-on-primary-container px-10 py-4 rounded-full font-bold uppercase tracking-[0.2em] hover:bg-on-primary-container/10 transition-colors">
                 Contact Our Advisors
-              </a>
+              </Link>
             </div>
           </div>
         </section>

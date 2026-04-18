@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Footer from '@/components/Footer';
 
 export default function EmploymentPage() {
@@ -255,6 +256,41 @@ export default function EmploymentPage() {
                 Apply Now
               </button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-surface-container-low">
+        <div className="container mx-auto px-6 md:px-12">
+          <div className="text-center mb-12">
+            <span className="inline-flex items-center justify-center rounded-full border border-primary-container/30 bg-surface-container-high px-4 py-2 text-primary text-xs uppercase tracking-[0.35em] mb-4">
+              Trusted Partners
+            </span>
+            <h2 className="font-headline text-3xl font-bold">Our Clients</h2>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 items-center">
+            {[
+              { src: '/client/ABCTechnologies_Primary_RGB-1536x806.png', alt: 'ABC Technologies' },
+              { src: '/client/ace-1536x576.jpg', alt: 'ACE' },
+              { src: '/client/logo1.png', alt: 'Client' },
+              { src: '/client/logoRound.png', alt: 'Client' },
+              { src: '/client/nafa.png', alt: 'NAFA' },
+              { src: '/client/petvalue.jpg', alt: 'Pet Value' },
+              { src: '/client/pizapiza.png', alt: 'Piza Piza' },
+            ].map(({ src, alt }) => (
+              <div
+                key={src}
+                className="flex items-center justify-center p-6 bg-surface-container rounded-2xl border border-outline-variant/20 h-28"
+              >
+                <Image
+                  src={src}
+                  alt={alt}
+                  width={160}
+                  height={80}
+                  className="object-contain max-h-16 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>

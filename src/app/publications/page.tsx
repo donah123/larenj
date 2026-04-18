@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Footer from '@/components/Footer';
 
 export default function PublicationsPage() {
@@ -32,10 +33,11 @@ export default function PublicationsPage() {
             <div className="relative group">
               <div className="absolute -inset-4 bg-primary-container/10 blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="relative aspect-[3/4] rounded-3xl bg-surface-container-high border border-outline-variant/30 p-3 shadow-2xl overflow-hidden">
-                <img
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc5ZSwjtoqYISlNzVzbfH5YaW2NROZwU0olxWjctRHF7lyMS1M8WRFdeo1862tZeiEhIVzICGTo-SufMsfEGfoRLqGkCZ9cDu7AMOFKa4u1Sj3G3hDl-47iW2VRAsPKIEGlPzK7mJ4DXLnqp2zuLSPymvYjKOYh_fS2a8dhZSlIDvt8jUmWe8qsI935TqntkFkz7TyjEMVm4HUeLvSClPNmBzg2J6lzfujwF8Yegx7lMxaGtO3QbZiz7rl2cncFQItrcGXm6Qq0g"
+                <Image
+                  src="/hunter.jpg"
                   alt="The Hunters and the Flock Keepers book cover"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <div className="mt-8 flex items-center justify-between border-t border-outline-variant/20 pt-6">
