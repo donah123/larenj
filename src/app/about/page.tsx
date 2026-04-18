@@ -1,4 +1,5 @@
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export default function About() {
   return (
@@ -11,14 +12,14 @@ export default function About() {
             <img alt="Architectural detail" className="w-full h-full object-cover opacity-40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM8ZVY9Lttw_PLAtCsC1YJf9rP0UNG5qXdMzIZP4mP-0xzcqpJN_OYE3yDwpi3fBJcwO66ZhG8CJj8phCrLTcEPHDTo0CNZIuri5nExZ23wYb3bNR3zup1iIam8S4it5k46w5s1_HckRQ1ms7SCd_FCnPO-JpcQnLWnW1EzMM2QQwzetnONSbUXIZDQWC3v9OR_Gi67ysyiVgppUZ43kVfGZqG33eMg3ChyICKcmZAs68jndU95uwr3H90iRmVPby7z8WysL4L8Q" />
             <div className="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
           </div>
-          <div className="relative z-10 max-w-screen-2xl mx-auto px-8 w-full">
+          <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-12 w-full">
             <div className="max-w-4xl">
               <span className="text-primary tracking-[0.3em] uppercase text-sm mb-6 block font-semibold">Established 1994</span>
-              <h1 className="font-headline text-7xl md:text-9xl text-on-surface leading-[0.9] tracking-tighter mb-8">
+              <h1 className="font-headline text-4xl md:text-7xl lg:text-9xl text-on-surface leading-[0.9] tracking-tighter mb-8">
                 Our Heritage: Architects of <span className="italic text-primary">Global</span> Opportunity
               </h1>
               <div className="h-px w-32 bg-primary mb-8"></div>
-              <p className="text-on-surface-variant text-xl max-w-xl leading-relaxed">
+              <p className="text-on-surface-variant text-lg md:text-xl max-w-xl leading-relaxed">
                 Larenj International Consulting defines the intersection of traditional prestige and futuristic global mobility. We do not just consult; we curate your legacy across borders.
               </p>
             </div>
@@ -117,7 +118,7 @@ export default function About() {
               {/* Leader 2 */}
               <div className="group bg-surface-container-high p-8 hover:bg-surface-bright transition-all duration-500 mt-0 md:mt-12">
                 <div className="aspect-[3/4] mb-8 overflow-hidden">
-                  <img alt="Elena Voshkod" className="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi6YtaBYRKJQj1C3iZQN-w_TIU3FQomWG5N4P8QbTjkyxspUHbsYaTD7ALY7_PFNWqEaCFB59xYAwlIy9pS4PYeBTzQ3YzZBg_xZLgJ_t_rhPTI5UmefrazAjNfzOs1--9VndodOQ6aGQbFY73uhdAxYkIhmVrr2XGM_L3qCoHPtjwZoVdknTgAxzaXQggjxKPTF8l1vaRO1dQipluPUls9M7JDLdKc2kmq99ou5OFFgrNu6ZxemDLO3kpU-x6rqTRNPrDXKfPxw" />
+                  <img alt="Elena Voshkod" className="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80" />
                 </div>
                 <h3 className="font-headline text-2xl mb-1">Elena Voshkod</h3>
                 <p className="text-primary uppercase tracking-widest text-xs font-bold mb-4">VP Talent Acquisition</p>
@@ -149,6 +150,7 @@ export default function About() {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 }

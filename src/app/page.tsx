@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -9,7 +11,7 @@ export default function Home() {
         <section className="relative min-h-screen flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-gradient-to-r from-surface to-transparent z-10"></div>
-            <img className="w-full h-full object-cover opacity-30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaacqCrB6KLgJw8nFqCobMuhB3FP0r11vKXb51p8_iky7uRCZQnUGX9nBh_1i-U_JroEmHUVhHeaHM4UL8k2azoWG6foCF8erOFgTzd_Ewvbv7nx1uENT9jWUGqUKom5LVlz51VaP9ysihS6dm004cpchx7voxr3_Xx2B0XlPBY9I5k0Qe6Q3sn8c3ZqYdu2Y0_rb9H5AasIiro4YgHhBvIjAIHt5F_Gj8q_qi1ilvzRq8CyML6I7ih1qoQ5f5DnoZ8kjU_qw6BA" alt="Panoramic architectural shot of high-end corporate skyscrapers in a global financial district during twilight" />
+            <img className="w-full h-full object-cover opacity-30" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=1080&fit=crop&crop=center" alt="Modern corporate skyscrapers" />
           </div>
           <div className="container mx-auto px-12 relative z-20">
             <div className="max-w-4xl">
@@ -21,9 +23,9 @@ export default function Home() {
                 Navigating the complexities of global citizenship, executive mobility, and strategic enterprise consulting with unparalleled discretion and institutional precision.
               </p>
               <div className="flex gap-6">
-                <button className="bg-gradient-to-r from-primary to-primary-container px-10 py-4 rounded-md text-on-primary font-bold tracking-wider text-lg shadow-xl">
+                <Link href="/contact" className="bg-gradient-to-r from-primary to-primary-container px-10 py-4 rounded-md text-on-primary font-bold tracking-wider text-lg shadow-xl">
                   Request Consultation
-                </button>
+                </Link>
                 <button className="border border-outline-variant/30 px-10 py-4 rounded-md text-on-background font-bold tracking-wider text-lg hover:bg-surface-container-high transition-colors">
                   Our Methodology
                 </button>
@@ -43,7 +45,7 @@ export default function Home() {
                   <h3 className="text-3xl font-headline font-bold mb-6 group-hover:text-primary transition-colors">Larenj Consulting</h3>
                   <p className="text-on-surface-variant leading-relaxed">Strategic advisory for multinational corporations entering high-growth markets. We provide the institutional bridge between local insight and global ambition.</p>
                 </div>
-                <a className="flex items-center gap-4 text-primary font-bold tracking-widest text-xs uppercase mt-8 group-hover:gap-6 transition-all" href="#">
+                <a className="flex items-center gap-4 text-primary font-bold tracking-widest text-xs uppercase mt-8 group-hover:gap-6 transition-all" href="/consulting">
                   Explore Strategy <span className="material-symbols-outlined">arrow_forward</span>
                 </a>
               </div>
@@ -157,7 +159,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <article className="group">
                 <div className="aspect-video bg-surface-container-high mb-8 overflow-hidden rounded-sm">
-                  <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8kkiestqbnycVuMUrF7VSL2s-v5UGjqZYAD0iGDTbwPO-EOQXLCML5dXfQOvVAK0Dd-RggxgYLWiK-s-JW-abVwCwKF7rPH39uX7MrifzT5u1_-OOrMNd8G--y-LMvcTH79GfO_ro2mAOfkH1Bt8gWMS3dUqU1f4kLb8djNSO-P_SYmsdVmW77tfyTt8j6AG8f3rE87Ze16YJ17vj6mqndTl_uG3B3BSqDjWPULcuYQF5BXufwboi7xHM-u6r-N8vDv7YDjvIFA" alt="Overhead shot of a premium dark wood desk with a fountain pen, leather notebook, and a pair of reading glasses" />
+                  <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Overhead shot of a premium dark wood desk with a fountain pen, leather notebook, and a pair of reading glasses" />
                 </div>
                 <span className="text-xs font-label uppercase tracking-[0.2em] text-primary-container mb-3 block">Global Policy</span>
                 <h4 className="text-2xl font-headline font-bold text-on-background group-hover:text-primary transition-colors leading-tight mb-4">Navigating the 2024 EU Residency Amendments</h4>
@@ -165,7 +167,7 @@ export default function Home() {
               </article>
               <article className="group">
                 <div className="aspect-video bg-surface-container-high mb-8 overflow-hidden rounded-sm">
-                  <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWNhnJhvSPDPqG1LJA3JTCDVPPnUXENnMKH66Y-kPqsbewbQrP-CdbfJ-h7NaK6O3MlnGbkNb8gOdnk6iL3sI6SjNRMmSkgBeaR8QWCBFSCSn-Fs9iDnsCCDkmszHYWiYQuj-nqIh6k1uMCD6zubcFA0kgkWg2hHWFB8J5z5Ex_rKDYeKws1INDd0qSv_tX6MktJJl9j2hw1bUjminEAA8feRzh0_t-06P01vhM86Nh36SOjW2VZpj1D9qpKVH_D2vKmOCrFWdUQ" alt="Two executives shaking hands in a high-rise office with large glass windows overlooking a modern city skyline" />
+                  <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" alt="Two executives shaking hands in a high-rise office with large glass windows overlooking a modern city skyline" />
                 </div>
                 <span className="text-xs font-label uppercase tracking-[0.2em] text-primary-container mb-3 block">Strategic Enterprise</span>
                 <h4 className="text-2xl font-headline font-bold text-on-background group-hover:text-primary transition-colors leading-tight mb-4">Corporate Inversion in the Middle Eastern Markets</h4>
@@ -173,7 +175,7 @@ export default function Home() {
               </article>
               <article className="group">
                 <div className="aspect-video bg-surface-container-high mb-8 overflow-hidden rounded-sm">
-                  <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFGrh3uEaxduih7YtVdy9fbY6JYcmIyZt9a56HeliUdNFnIhRn9abWfard6Yrmwo617iOYXZhZKO0IMlfpSXD3MizlUDmRUPKgTV95LAieyWlEEzPG-Ze2Hh7Abxkrf82AjfWD_so9o96X_LT5n-jo3lthNua2ejty0LAr-xPWG1DllBU-iH80F1XLL_3uIEbigbJBm8HlEkL15EEOGDnIGod3gCyHv4ObB8Un3qjMLdREmao8NrXI00BhA9q-3WsgKJk4C7Cw" alt="A legal gavel resting on a stack of aged leather-bound books in a dim, prestigious law office" />
+                  <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4?auto=format&fit=crop&w=1200&q=80" alt="A legal gavel resting on a stack of aged leather-bound books in a dim, prestigious law office" />
                 </div>
                 <span className="text-xs font-label uppercase tracking-[0.2em] text-primary-container mb-3 block">Talent Mobility</span>
                 <h4 className="text-2xl font-headline font-bold text-on-background group-hover:text-primary transition-colors leading-tight mb-4">The Future of Executive Work Visas in the Tech Era</h4>
@@ -193,6 +195,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   );
 }

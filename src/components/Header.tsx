@@ -1,24 +1,141 @@
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
-    <header className="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-lg transition-all shadow-[0px_24px_48px_rgba(0,0,0,0.4)]">
-      <nav className="flex justify-between items-center w-full px-12 py-6 max-w-[1920px] mx-auto">
-        <div className="flex items-center gap-4">
-          <img alt="Larenj International Logo" className="h-10 w-auto" src="/logo.jpeg" />
-          <span className="text-2xl font-serif text-primary tracking-tighter font-bold">Larenj International</span>
+    <>
+      <nav className="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-lg shadow-[0px_24px_48px_rgba(0,0,0,0.4)]">
+        <div className="flex justify-between items-center w-full px-4 md:px-12 py-6 max-w-[1920px] mx-auto">
+          <Link href="/" className="flex items-center gap-2 md:gap-4" onClick={closeMobileMenu}>
+            <Image
+              src="/logo.svg"
+              alt="Larenj International Logo"
+              width={32}
+              height={32}
+              className="rounded"
+            />
+            <span className="text-lg md:text-2xl font-headline font-bold text-primary tracking-tighter">
+              Larenj International
+            </span>
+          </Link>
+          <div className="hidden md:flex gap-10 items-center">
+            <Link className="text-on-surface font-medium hover:text-primary transition-all duration-300" href="/consulting">
+              Consulting
+            </Link>
+            <Link className="text-on-surface font-medium hover:text-primary transition-all duration-300" href="/immigration">
+              Immigration
+            </Link>
+            <Link className="text-on-surface font-medium hover:text-primary transition-all duration-300" href="/employment">
+              Employment
+            </Link>
+            <Link className="text-on-surface font-medium hover:text-primary transition-all duration-300" href="/careers">
+              Careers
+            </Link>
+            <Link className="text-on-surface font-medium hover:text-primary transition-all duration-300" href="/about">
+              About
+            </Link>
+            <Link className="text-on-surface font-medium hover:text-primary transition-all duration-300" href="/contact">
+              Contact
+            </Link>
+          </div>
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <button
+              onClick={toggleMobileMenu}
+              className="text-on-surface p-2 hover:text-primary transition-colors"
+              aria-label="Toggle mobile menu"
+            >
+              <span className="material-symbols-outlined text-2xl">
+                {isMobileMenuOpen ? 'close' : 'menu'}
+              </span>
+            </button>
+          </div>
         </div>
-        <div className="hidden md:flex items-center gap-10">
-          <Link href="/consulting" className="text-primary border-b-2 border-tertiary pb-1 font-bold tracking-tight">Consulting</Link>
-          <Link href="/immigration" className="text-on-surface font-medium tracking-tight hover:text-primary transition-all duration-300">Immigration</Link>
-          <Link href="/employment" className="text-on-surface font-medium tracking-tight hover:text-primary transition-all duration-300">Employment</Link>
-          <Link href="/insights" className="text-on-surface font-medium tracking-tight hover:text-primary transition-all duration-300">Insights</Link>
-          <Link href="/about" className="text-on-surface font-medium tracking-tight hover:text-primary transition-all duration-300">About</Link>
-        </div>
-        <button className="bg-gradient-to-r from-primary to-primary-container px-8 py-2.5 rounded-md text-on-primary font-bold tracking-wide scale-95 active:scale-100 transition-transform">
-          Client Portal
-        </button>
       </nav>
-    </header>
+
+      {/* Mobile Menu Overlay */}
+      {isMobileMenuOpen && (
+        <div
+          className="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm md:hidden"
+          onClick={closeMobileMenu}
+        />
+      )}
+
+      {/* Mobile Menu Panel */}
+      <div className={`fixed top-0 right-0 h-full w-80 max-w-[90vw] bg-surface z-50 transform transition-transform duration-300 ease-in-out md:hidden shadow-2xl ${
+        isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+      }`}>
+        <div className="flex flex-col h-full pt-24 pb-8 px-6">
+          <div className="flex flex-col gap-6">
+            <Link
+              className="text-on-surface font-medium hover:text-primary transition-all duration-300 py-3 border-b border-outline-variant/20"
+              href="/consulting"
+              onClick={closeMobileMenu}
+            >
+              Consulting
+            </Link>
+            <Link
+              className="text-on-surface font-medium hover:text-primary transition-all duration-300 py-3 border-b border-outline-variant/20"
+              href="/immigration"
+              onClick={closeMobileMenu}
+            >
+              Immigration
+            </Link>
+            <Link
+              className="text-on-surface font-medium hover:text-primary transition-all duration-300 py-3 border-b border-outline-variant/20"
+              href="/employment"
+              onClick={closeMobileMenu}
+            >
+              Employment
+            </Link>
+            <Link
+              className="text-on-surface font-medium hover:text-primary transition-all duration-300 py-3 border-b border-outline-variant/20"
+              href="/careers"
+              onClick={closeMobileMenu}
+            >
+              Careers
+            </Link>
+            <Link
+              className="text-on-surface font-medium hover:text-primary transition-all duration-300 py-3 border-b border-outline-variant/20"
+              href="/about"
+              onClick={closeMobileMenu}
+            >
+              About
+            </Link>
+            <Link
+              className="text-on-surface font-medium hover:text-primary transition-all duration-300 py-3 border-b border-outline-variant/20"
+              href="/contact"
+              onClick={closeMobileMenu}
+            >
+              Contact
+            </Link>
+          </div>
+
+          {/* Mobile CTA */}
+          <div className="mt-auto">
+            <Link
+              href="/contact"
+              onClick={closeMobileMenu}
+              className="block w-full bg-primary text-on-primary text-center py-4 rounded-md font-bold hover:bg-primary/90 transition-colors"
+            >
+              Get In Touch
+            </Link>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
