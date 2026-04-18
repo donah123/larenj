@@ -18,16 +18,16 @@ export default function Header() {
   return (
     <>
       <nav className="fixed top-0 w-full z-50 bg-surface/95 border-b border-surface-container-high backdrop-blur-lg shadow-[0px_24px_48px_rgba(0,0,0,0.4)]">
-        <div className="flex justify-between items-center w-full px-4 md:px-12 py-6 max-w-[1920px] mx-auto">
+        <div className="flex justify-between items-center w-full px-4 md:px-12 py-4 md:py-6 max-w-[1920px] mx-auto">
           <Link href="/" className="flex items-center gap-2 md:gap-4" onClick={closeMobileMenu}>
             <Image
               src="/logo1.png"
               alt="Larenj International Logo"
-              width={70}
-              height={70}
-              className="rounded"
+              width={50}
+              height={50}
+              className="rounded md:w-[70px] md:h-[70px]"
             />
-            <span className="text-lg md:text-2xl font-headline font-bold text-primary tracking-tighter">
+            <span className="text-base md:text-2xl font-headline font-bold text-primary tracking-tighter">
               Larenj International
             </span>
           </Link>
@@ -43,6 +43,9 @@ export default function Header() {
             </Link>
             <Link className="text-white font-medium hover:text-primary transition-all duration-300" href="/careers">
               Careers
+            </Link>
+            <Link className="text-white font-medium hover:text-primary transition-all duration-300" href="/publications">
+              Publications
             </Link>
             <Link className="text-white font-medium hover:text-primary transition-all duration-300" href="/about">
               About
@@ -107,6 +110,13 @@ export default function Header() {
               onClick={closeMobileMenu}
             >
               Careers
+            </Link>
+            <Link
+              className="text-on-surface font-medium hover:text-primary transition-all duration-300 py-3 border-b border-outline-variant/20"
+              href="/publications"
+              onClick={closeMobileMenu}
+            >
+              Publications
             </Link>
             <Link
               className="text-on-surface font-medium hover:text-primary transition-all duration-300 py-3 border-b border-outline-variant/20"

@@ -1,217 +1,171 @@
+
 import Footer from '@/components/Footer';
 
 export default function ImmigrationPage() {
   return (
-    <div className="min-h-screen bg-surface">
-
+    <div className="min-h-screen bg-surface font-body">
       {/* Hero Section */}
-      <section className="px-4 md:px-12 py-20 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-16 items-center">
-        <div className="lg:col-span-7">
-          <h4 className="text-primary font-label uppercase tracking-[0.3em] mb-6 text-sm font-semibold">
-            The Sovereign Archive
-          </h4>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-on-surface leading-tight tracking-tight mb-8">
-            Your Global Legacy, <br />
-            <span className="italic text-primary-container">Architected.</span>
-          </h1>
-          <p className="text-on-surface-variant text-lg md:text-xl leading-relaxed max-w-xl mb-12">
-            Expertly navigating the complexities of Canadian settlement. We don't just process applications; we curate your transition into a new chapter of global citizenship.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6">
-            <button className="gold-gradient text-on-primary px-8 py-4 rounded-md font-bold tracking-wide">
-              Begin Your Journey
-            </button>
-            <button className="border border-outline/20 px-8 py-4 rounded-md font-bold hover:bg-surface-container-high transition-colors">
-              Our Approach
-            </button>
-          </div>
-        </div>
-        <div className="lg:col-span-5 relative">
-          <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative z-10">
-            <img
-              className="w-full h-full object-cover grayscale-[30%] hover:grayscale-0 transition-all duration-700"
-              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=750&fit=crop&crop=center"
-              alt="Modern minimalist architectural view"
-            />
-          </div>
-          <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10"></div>
-          <div className="absolute -top-10 -right-10 w-48 h-48 bg-secondary-container/20 rounded-full blur-3xl -z-10"></div>
-        </div>
-      </section>
-
-      {/* Settlement Architecture Bento Grid */}
-      <section className="bg-surface-container-low py-32 mt-20">
-        <div className="px-12 max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
-            <div className="max-w-2xl">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-on-surface">Settlement Architecture</h2>
-              <p className="text-on-surface-variant text-lg">
-                Comprehensive integration services designed for the discerning global professional. From initial preparation to full citizenship.
-              </p>
+      <header className="relative py-24 md:py-32 px-6 border-b border-outline-variant/30" style={{ background: 'linear-gradient(to bottom, rgba(10, 14, 23, 0.8), rgba(15, 19, 28, 1)), url("https://images.unsplash.com/photo-1454165833767-027eeef1551b?auto=format&fit=crop&q=80&w=2070")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-8">
+            <div className="inline-block border-l-4 border-primary px-4 py-1 bg-primary/5">
+              <span className="text-primary font-bold tracking-[0.2em] uppercase text-sm">Decade of Excellence</span>
             </div>
-            <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-full border border-outline/20 flex items-center justify-center cursor-pointer hover:bg-primary hover:text-on-primary transition-all">
-                <span className="material-symbols-outlined">west</span>
-              </div>
-              <div className="w-12 h-12 rounded-full border border-outline/20 flex items-center justify-center cursor-pointer hover:bg-primary hover:text-on-primary transition-all">
-                <span className="material-symbols-outlined">east</span>
-              </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-            {/* Pre-arrival */}
-            <div className="md:col-span-8 bg-surface-container-high p-12 rounded-xl group hover:bg-surface-container-highest transition-all relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-1/2 h-full opacity-10 grayscale group-hover:grayscale-0 group-hover:opacity-20 transition-all">
-                <img
-                  className="w-full h-full object-cover"
-                  src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=600&h=400&fit=crop&crop=center"
-                  alt="Business district aerial view"
-                />
-              </div>
-              <div className="relative z-10">
-                <span className="material-symbols-outlined text-primary text-4xl mb-8" style={{ fontVariationSettings: "'FILL' 1" }}>
-                  flight_takeoff
-                </span>
-                <h3 className="text-3xl font-bold mb-4 text-on-surface">Pre-Arrival Strategy</h3>
-                <p className="text-on-surface-variant mb-8 max-w-md">
-                  Laying the foundation before you touch down. We provide cultural orientation, financial planning, and professional mapping to ensure zero friction upon arrival.
-                </p>
-                <ul className="space-y-4 mb-10">
-                  <li className="flex items-center gap-3">
-                    <span className="material-symbols-outlined text-primary text-sm">check_circle</span> Life in Canada Orientation
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="material-symbols-outlined text-primary text-sm">check_circle</span> Executive Employment Sourcing
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <span className="material-symbols-outlined text-primary text-sm">check_circle</span> Real Estate &amp; Luxury Housing Prep
-                  </li>
-                </ul>
-                <a className="inline-flex items-center gap-2 text-primary font-bold group-hover:translate-x-2 transition-transform" href="#">
-                  Explore Pre-Arrival <span className="material-symbols-outlined">arrow_forward</span>
-                </a>
-              </div>
-            </div>
-
-            {/* Permanent Residency */}
-            <div className="md:col-span-4 bg-surface-container-high p-12 rounded-xl border border-outline/5">
-              <span className="material-symbols-outlined text-primary text-4xl mb-8">domain</span>
-              <h3 className="text-3xl font-bold mb-4 text-on-surface">Permanent Residency</h3>
-              <p className="text-on-surface-variant mb-8">
-                Securing your status in the sovereign archive. Expert navigation through Express Entry and Provincial Nominee Programs.
-              </p>
-              <button className="w-full py-4 rounded border border-primary/30 text-primary font-bold hover:bg-primary/5 transition-colors">
-                Eligibility Assessment
+            <h1 className="text-5xl md:text-7xl font-headline font-black text-on-surface leading-tight">
+              Larenj Immigrant <span className="text-primary">Settlement Services</span>
+            </h1>
+            <p className="text-xl text-on-surface-variant leading-relaxed max-w-xl">
+              Larenjayo Inc has been providing high quality settlement services for numerous immigrants to Canada since the last ten years. Our settlement services are both generic and tailored to the needs of all categories of qualified immigrants.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <button className="bg-primary-container text-on-primary-container px-8 py-4 text-lg font-bold flex items-center gap-2 hover:scale-105 transition-transform">
+                Get in touch
+                <span className="material-symbols-outlined">arrow_forward</span>
               </button>
             </div>
+          </div>
+        </div>
+      </header>
 
-            {/* Scholars & Professionals */}
-            <div className="md:col-span-4 bg-surface-container-high p-12 rounded-xl">
-              <span className="material-symbols-outlined text-primary text-4xl mb-8">school</span>
-              <h3 className="text-2xl font-bold mb-4 text-on-surface">Scholars &amp; Professionals</h3>
-              <p className="text-on-surface-variant mb-4">
-                Academic placement and elite work permit facilitation for those driving global innovation.
+      {/* Pre-arrival Services Section */}
+      <section className="py-24 px-6 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-12 gap-12 items-start">
+            <div className="md:col-span-5 sticky top-28">
+              <h2 className="text-4xl font-headline font-bold text-primary mb-6">Pre-arrival services</h2>
+              <p className="text-lg text-on-surface-variant leading-relaxed mb-8">
+                Pre-arrival services offer information to better understand life in Canada such as how to find a job, and how to access other free settlement services when you arrive in Canada. Some programs we offer will help you access specific information according to your profession or destination, such as language training and essential skills training in the workplace.
               </p>
+              <div className="bg-surface-container-highest p-8 border-t-2 border-primary">
+                <h3 className="font-headline text-xl mb-4 text-on-surface">Eligibility Criteria</h3>
+                <ul className="space-y-4">
+                  <li className="flex gap-4">
+                    <span className="material-symbols-outlined text-primary">verified</span>
+                    <span className="text-on-surface-variant">You have received a Confirmation of Permanent Residence letter (COPR), or have been contacted by IRCC with a positive decision.</span>
+                  </li>
+                  <li className="flex gap-4">
+                    <span className="material-symbols-outlined text-primary">public</span>
+                    <span className="text-on-surface-variant">You live outside of Canada.</span>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <div className="md:col-span-7">
+              <div className="relative rounded-xl overflow-hidden aspect-[16/10] group">
+                <img
+                  className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnkABZilSPi4q7IMpLcwi2YkuL5u7Fa9C3BmbBped3p9jRgtSSMy4uiAlWDQdDogG2ActKF4ZyeBymjL1g1o9YZZCKNr82HIdlW_rYXeQH8XVAlwzGbRkF90r29Ez6Zso_0GCmyZIWWVfzBVo68B9MnxWfhXCMSf0MJjcJRkDQZxCVEFn3PJmcvnZhxoaXf5yO2DAUVV26gnKGzq3SaC2iTzR6fxi0Ns2R-Sfp6O5pV1FpqCMIYFJ88VSM-LjBGfEFhAonGsazrw"
+                  alt="Settlement Consultation"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            {/* Linguistic Mastery */}
-            <div className="md:col-span-8 bg-surface-container-high p-12 rounded-xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      {/* In-Canada Settlement Services Section (Bento Style) */}
+      <section className="py-24 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-headline font-black text-on-surface mb-4">In-Canada Settlement Services</h2>
+            <p className="text-on-surface-variant max-w-3xl mx-auto">These settlement services are for newcomers to Canada such as those with permanent residence visas, students and work permit holders who need expert guidance on getting settled.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Community Integration */}
+            <div className="glass-card p-8 md:col-span-2 flex flex-col justify-between group">
               <div>
-                <span className="material-symbols-outlined text-primary text-4xl mb-8">translate</span>
-                <h3 className="text-3xl font-bold mb-4 text-on-surface">Linguistic Mastery</h3>
-                <p className="text-on-surface-variant">
-                  Command the language of your new home. Bespoke language training focused on professional integration and high-level negotiation.
-                </p>
+                <span className="material-symbols-outlined text-primary text-4xl mb-4">home_work</span>
+                <h3 className="text-2xl font-headline font-bold mb-4">Community Integration</h3>
+                <p className="text-on-surface-variant">Getting you settled in your community; Finding housing, a job or childcare. We ensure your first steps in Canada are firm and supported.</p>
               </div>
-              <div className="bg-surface-container-lowest p-6 rounded-lg border border-outline/10">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold italic">
-                    L
+              <div className="mt-8 h-48 w-full rounded overflow-hidden">
+                <img
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=600&h=400"
+                  alt="Community"
+                />
+              </div>
+            </div>
+            {/* Education & Schools */}
+            <div className="bg-primary-container p-8 flex flex-col justify-center text-on-primary-container">
+              <span className="material-symbols-outlined text-5xl mb-6">school</span>
+              <h3 className="text-2xl font-headline font-bold mb-4">Education &amp; Schools</h3>
+              <p className="font-medium">Helping you and your children to find the right school and get registered for a bright future in the Canadian education system.</p>
+            </div>
+            {/* Language & Training */}
+            <div className="glass-card p-8">
+              <span className="material-symbols-outlined text-primary text-4xl mb-4">translate</span>
+              <h3 className="text-xl font-headline font-bold mb-4">Language &amp; Training</h3>
+              <p className="text-sm text-on-surface-variant">Access to programs such as English or French classes, employment services, skills training and foreign credential assessment.</p>
+            </div>
+            {/* Health & Social */}
+            <div className="glass-card p-8">
+              <span className="material-symbols-outlined text-primary text-4xl mb-4">medical_services</span>
+              <h3 className="text-xl font-headline font-bold mb-4">Health &amp; Social</h3>
+              <p className="text-sm text-on-surface-variant">Helping you to get information about healthcare and social services to ensure your family's well-being.</p>
+            </div>
+            {/* Spiritual & Support */}
+            <div className="glass-card p-8">
+              <span className="material-symbols-outlined text-primary text-4xl mb-4">church</span>
+              <h3 className="text-xl font-headline font-bold mb-4">Spiritual &amp; Support</h3>
+              <p className="text-sm text-on-surface-variant">Helping you to find churches to attend and providing expert interpreters or translators for your needs.</p>
+            </div>
+            {/* Special Assistance Banner */}
+            <div className="md:col-span-3 mt-12 bg-surface-container p-12 border-l-8 border-primary relative overflow-hidden">
+              <div className="relative z-10 grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h3 className="text-2xl font-headline font-bold text-primary mb-4 flex items-center gap-3">
+                    <span className="material-symbols-outlined">sign_language</span>
+                    Special Assistance
+                  </h3>
+                  <p className="text-on-surface-variant">We also help new immigrants request sign language interpreters from anywhere in Ontario by helping you to contact the Canadian Hearing Society.</p>
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-surface-container-high p-4">
+                    <p className="text-xs text-primary font-bold uppercase tracking-widest mb-1">Mon - Thu</p>
+                    <p className="text-on-surface text-lg font-bold">8am - 8pm</p>
                   </div>
-                  <div>
-                    <p className="font-bold text-on-surface">Bespoke Training</p>
-                    <p className="text-xs text-on-surface-variant uppercase tracking-widest">Enrolling Now</p>
+                  <div className="bg-surface-container-high p-4">
+                    <p className="text-xs text-primary font-bold uppercase tracking-widest mb-1">Friday</p>
+                    <p className="text-on-surface text-lg font-bold">8am - 5pm</p>
                   </div>
                 </div>
-                <div className="space-y-3">
-                  <div className="h-2 w-full bg-surface-variant rounded-full overflow-hidden">
-                    <div className="h-full bg-primary w-[85%]"></div>
-                  </div>
-                  <div className="flex justify-between text-xs font-mono">
-                    <span>PROFICIENCY</span>
-                    <span>85%</span>
-                  </div>
-                </div>
+              </div>
+              <div className="absolute top-0 right-0 p-4 opacity-5">
+                <span className="material-symbols-outlined text-[15rem]">interpreter_mode</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Global Connectivity / Map Section */}
-      <section className="py-32 px-12 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-          <div className="order-2 lg:order-1">
-            <div className="aspect-square bg-surface-container-low rounded-full relative overflow-hidden border border-outline/10">
-              <img
-                className="w-full h-full object-cover opacity-60"
-                src="https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?w=600&h=600&fit=crop&crop=center"
-                alt="Global connectivity visualization"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-surface to-transparent"></div>
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center w-full">
-                <div className="text-5xl font-serif text-primary mb-2">140+</div>
-                <div className="text-xs uppercase tracking-[0.4em] font-bold">Nations Served</div>
-              </div>
-            </div>
-          </div>
-          <div className="order-1 lg:order-2">
-            <h2 className="text-5xl font-bold mb-8 leading-tight text-on-surface">
-              A Borderless <br />Philosophy.
-            </h2>
-            <p className="text-on-surface-variant text-lg leading-relaxed mb-10">
-              Our network spans across continents, ensuring that your transition to Canada is supported by local expertise in your home region. We bridge the gap between where you are and where you are meant to be.
+      {/* Eligibility Section */}
+      <section className="py-24 px-6 bg-surface-container-lowest">
+        <div className="max-w-5xl mx-auto glass-card p-12 md:p-20 relative overflow-hidden">
+          <div className="relative z-10 text-center">
+            <h2 className="text-4xl font-headline font-black text-on-surface mb-8">Who is Eligible?</h2>
+            <p className="text-xl text-on-surface-variant leading-relaxed mb-12">
+              Our services are available to Permanent Residents of Canada, landed immigrants, convention refugees, Minister’s Permit holders, or refugee claimants approved by Citizenship Immigration and Canada.
             </p>
-            <div className="space-y-8">
-              <div className="flex gap-6 items-start">
-                <div className="mt-1 flex-shrink-0 w-10 h-10 bg-primary-container/20 rounded flex items-center justify-center text-primary">
-                  <span className="material-symbols-outlined">public</span>
-                </div>
-                <div>
-                  <h4 className="font-bold text-xl mb-2 text-on-surface">Global Connectivity</h4>
-                  <p className="text-on-surface-variant">
-                    Real-time coordination with Canadian immigration authorities and international logistical partners.
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-6 items-start">
-                <div className="mt-1 flex-shrink-0 w-10 h-10 bg-primary-container/20 rounded flex items-center justify-center text-primary">
-                  <span className="material-symbols-outlined">verified_user</span>
-                </div>
-                <div>
-                  <h4 className="font-bold text-xl mb-2 text-on-surface">Regulatory Authority</h4>
-                  <p className="text-on-surface-variant">
-                    Fully licensed IRCC consultants providing authoritative legal guidance and settlement support.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <div className="h-px w-24 bg-primary mx-auto mb-12"></div>
+            <p className="text-lg text-on-surface-variant font-medium leading-relaxed italic">
+              "While these services are mainly for newcomers, other eligible immigrants who need help in adapting to Canadian society and integrating into the community may also qualify, regardless of how long they have been in Canada."
+            </p>
+          </div>
+          <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-10">
+            <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary via-transparent to-transparent"></div>
           </div>
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="px-12 py-32">
-        <div className="max-w-7xl mx-auto bg-surface-container rounded-3xl p-16 md:p-24 text-center relative overflow-hidden border border-outline/5">
-          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-30"></div>
-          <h2 className="text-4xl md:text-6xl font-bold mb-8 max-w-3xl mx-auto leading-tight text-on-surface">
-            Ready to Archive Your New Beginning?
-          </h2>
-          <p className="text-on-surface-variant text-xl mb-12 max-w-2xl mx-auto">
-            Join the ranks of global leaders who have trusted Larenj International for their Canadian integration.
-          </p>
-          <button className="gold-gradient text-on-primary px-12 py-5 rounded-md font-bold text-lg shadow-xl hover:scale-105 transition-transform">
-            Schedule Private Consultation
+      {/* Final CTA */}
+      <section className="py-24 px-6 text-center">
+        <div className="max-w-3xl mx-auto space-y-8">
+          <h3 className="text-3xl font-headline font-bold">Ready to start your Canadian journey?</h3>
+          <p className="text-on-surface-variant">Connect with our specialized consultants today and let us handle the complexities of your settlement.</p>
+          <button className="bg-primary text-on-primary-container px-12 py-5 text-xl font-black uppercase tracking-widest hover:bg-primary-fixed transition-colors">
+            Get in touch
           </button>
         </div>
       </section>

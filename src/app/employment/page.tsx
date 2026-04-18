@@ -90,7 +90,7 @@ export default function EmploymentPage() {
               <div className="rounded-3xl bg-primary p-12 text-on-primary border border-on-primary/10">
                 <h3 className="font-headline text-3xl font-bold mb-6">Our Mission</h3>
                 <p className="text-on-primary/90 text-lg leading-relaxed">
-                  To match, prepare and assign employees to clients’ needs across Ontario with adequate and accurate skills requirements, while delivering reliable support for both businesses and jobseekers.
+                  To match, prepare and assign employees to clients’ needs across Ontario with adequate and accurate skills requirements in a manner that maximizes value for clients and minimizes risks to employees
                 </p>
                 <div className="mt-8 italic text-on-primary/80 border-l-4 border-on-primary/30 pl-6">
                   “We don't just fill positions; we fortify operations through meticulous candidate preparation and alignment with legislative standards.”

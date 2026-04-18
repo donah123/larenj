@@ -5,40 +5,40 @@ import Link from 'next/link';
 
 const slides = [
   {
-    title: 'The Architect of',
-    accent: 'Sovereign Futures',
-    subtitle: 'Established Global Authority',
+    title: 'Strategic Consulting',
+    accent: 'in Canada',
+    subtitle: 'Business Excellence',
     description:
-      'Navigating the complexities of global citizenship, executive mobility, and strategic enterprise consulting with unparalleled discretion and institutional precision.',
+      'Navigate Canadian business landscapes with expert guidance in corporate strategy, market expansion, and operational optimization for sustainable growth.',
     image:
-      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&h=1080&fit=crop&crop=center',
-    ctaLabel: 'Request Consultation',
-    ctaHref: '/contact',
-    secondaryLabel: 'Our Methodology',
+      'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&h=1080&fit=crop&crop=center',
+    ctaLabel: 'Consulting Services',
+    ctaHref: '/consulting',
+    secondaryLabel: 'Our Expertise',
   },
   {
-    title: 'Global Citizenship',
-    accent: 'Elevated',
-    subtitle: 'Residence with Purpose',
+    title: 'Immigration Pathways',
+    accent: 'to Canada',
+    subtitle: 'Global Mobility Solutions',
     description:
-      'Tailored residency and citizenship solutions for discerning clients seeking secure, seamless, and sovereign global mobility.',
+      'Comprehensive immigration services for professionals, families, and businesses seeking to establish roots in Canada through Express Entry, Provincial Nominees, and family sponsorship.',
     image:
-      'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1920&h=1080&fit=crop',
-    ctaLabel: 'Discover Residency',
+      'https://images.unsplash.com/photo-1517935706615-2717063c2225?w=1920&h=1080&fit=crop',
+    ctaLabel: 'Immigration Services',
     ctaHref: '/immigration',
-    secondaryLabel: 'Learn How',
+    secondaryLabel: 'Start Your Journey',
   },
   {
-    title: 'Executive Mobility',
-    accent: 'Refined',
-    subtitle: 'Strategic Talent Movement',
+    title: 'Employment Solutions',
+    accent: 'Across Canada',
+    subtitle: 'Workforce Excellence',
     description:
-      'We enable seamless relocation for senior executives and their families through premium legal, immigration, and employment advisory.',
+      'Connect with premier employment opportunities in Ontario and beyond. From general labor to specialized roles, we bridge talent with opportunity.',
     image:
-      'https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?w=1920&h=1080&fit=crop',
-    ctaLabel: 'Explore Employment',
+      'https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?w=1920&h=1080&fit=crop',
+    ctaLabel: 'Find Employment',
     ctaHref: '/employment',
-    secondaryLabel: 'Our Approach',
+    secondaryLabel: 'Explore Opportunities',
   },
 ];
 

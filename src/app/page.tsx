@@ -1,173 +1,138 @@
-import Link from 'next/link';
 import Footer from '@/components/Footer';
 import HeroSlider from '@/components/HeroSlider';
-import ScrollReveal from '@/components/ScrollReveal';
 
 export default function Home() {
   return (
     <>
       <main className="pt-24">
         <HeroSlider />
-        <ScrollReveal />
 
-        {/* Pillars Section */}
-        <section className="py-32 bg-surface-container-low reveal-on-scroll">
+        {/* The Pillars of Prosperity */}
+        <section className="py-24 bg-surface-container-low">
           <div className="container mx-auto px-12">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
-              {/* Pillar 1: Consulting */}
-              <div className="group bg-surface p-12 min-h-[500px] flex flex-col justify-between transition-all duration-500 hover:bg-surface-container-high border-r border-outline-variant/10">
-                <div>
-                  <span className="material-symbols-outlined text-primary text-5xl mb-8" style={{fontVariationSettings: "'FILL' 1"}}>account_balance</span>
-                  <h3 className="text-3xl font-headline font-bold mb-6 group-hover:text-primary transition-colors">Larenj Consulting</h3>
-                  <p className="text-on-surface-variant leading-relaxed">Strategic advisory for multinational corporations entering high-growth markets. We provide the institutional bridge between local insight and global ambition.</p>
-                </div>
-                <a className="flex items-center gap-4 text-primary font-bold tracking-widest text-xs uppercase mt-8 group-hover:gap-6 transition-all" href="/consulting">
-                  Explore Strategy <span className="material-symbols-outlined">arrow_forward</span>
-                </a>
-              </div>
-              {/* Pillar 2: Immigration */}
-              <div className="group bg-surface p-12 min-h-[500px] flex flex-col justify-between transition-all duration-500 hover:bg-surface-container-high border-r border-outline-variant/10">
-                <div>
-                  <span className="material-symbols-outlined text-primary text-5xl mb-8" style={{fontVariationSettings: "'FILL' 1"}}>public</span>
-                  <h3 className="text-3xl font-headline font-bold mb-6 group-hover:text-primary transition-colors">Larenj Immigration</h3>
-                  <p className="text-on-surface-variant leading-relaxed">Curated residency and citizenship-by-investment solutions. We secure your family's legacy through world-class legal frameworks and diplomatic precision.</p>
-                </div>
-                <a className="flex items-center gap-4 text-primary font-bold tracking-widest text-xs uppercase mt-8 group-hover:gap-6 transition-all" href="#">
-                  Residency Pathways <span className="material-symbols-outlined">arrow_forward</span>
-                </a>
-              </div>
-              {/* Pillar 3: Employment */}
-              <div className="group bg-surface p-12 min-h-[500px] flex flex-col justify-between transition-all duration-500 hover:bg-surface-container-high">
-                <div>
-                  <span className="material-symbols-outlined text-primary text-5xl mb-8" style={{fontVariationSettings: "'FILL' 1"}}>badge</span>
-                  <h3 className="text-3xl font-headline font-bold mb-6 group-hover:text-primary transition-colors">Larenj Employment</h3>
-                  <p className="text-on-surface-variant leading-relaxed">Facilitating the global movement of top-tier executive talent. Specialized workforce solutions for industries demanding the highest caliber of professional expertise.</p>
-                </div>
-                <a className="flex items-center gap-4 text-primary font-bold tracking-widest text-xs uppercase mt-8 group-hover:gap-6 transition-all" href="#">
-                  Talent Mobility <span className="material-symbols-outlined">arrow_forward</span>
-                </a>
-              </div>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-headline font-bold text-primary mb-4">The Pillars of Prosperity</h2>
+              <div className="mx-auto h-1 w-24 bg-primary" />
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <article className="bg-surface p-10 rounded-3xl border border-outline-variant/20 shadow-xl hover:border-primary transition-all">
+                <span className="material-symbols-outlined text-primary text-4xl mb-6">account_balance</span>
+                <h3 className="text-2xl font-headline font-bold mb-4">Larenj Consulting Services</h3>
+                <p className="text-on-surface-variant mb-8 leading-relaxed text-sm">
+                  Pioneering Leadership Development and strategic Business Analysis. We train the Flock Keepers of the modern industry through rigorous BABOK and PMP guidelines.
+                </p>
+                <ul className="space-y-3 text-sm text-on-surface-variant">
+                  <li className="flex items-center gap-3"><span className="text-primary">•</span> Leadership Strategy</li>
+                  <li className="flex items-center gap-3"><span className="text-primary">•</span> Business Analysis (BABOK)</li>
+                  <li className="flex items-center gap-3"><span className="text-primary">•</span> Project Management (PMP)</li>
+                </ul>
+              </article>
+
+              <article className="bg-surface p-10 rounded-3xl border border-outline-variant/20 shadow-xl hover:border-primary transition-all">
+                <span className="material-symbols-outlined text-primary text-4xl mb-6">group_add</span>
+                <h3 className="text-2xl font-headline font-bold mb-4">Larenj Employment Services</h3>
+                <p className="text-on-surface-variant mb-8 leading-relaxed text-sm">
+                  A premier Canadian-owned staffing firm specializing in talent acquisition for Fortune 500 companies. From general labour to specialized executive roles.
+                </p>
+                <ul className="space-y-3 text-sm text-on-surface-variant">
+                  <li className="flex items-center gap-3"><span className="text-primary">•</span> Fortune 500 Placement</li>
+                  <li className="flex items-center gap-3"><span className="text-primary">•</span> Industrial Staffing</li>
+                  <li className="flex items-center gap-3"><span className="text-primary">•</span> Workforce Solutions</li>
+                </ul>
+              </article>
+
+              <article className="bg-surface p-10 rounded-3xl border border-outline-variant/20 shadow-xl hover:border-primary transition-all">
+                <span className="material-symbols-outlined text-primary text-4xl mb-6">potted_plant</span>
+                <h3 className="text-2xl font-headline font-bold mb-4">Larenj Immigration Services</h3>
+                <p className="text-on-surface-variant mb-8 leading-relaxed text-sm">
+                  High-quality settlement pathways for new immigrants to Canada. We provide comprehensive Pre-arrival and In-Canada support systems for seamless transition.
+                </p>
+                <ul className="space-y-3 text-sm text-on-surface-variant">
+                  <li className="flex items-center gap-3"><span className="text-primary">•</span> Pre-arrival Orientation</li>
+                  <li className="flex items-center gap-3"><span className="text-primary">•</span> Settlement Assistance</li>
+                  <li className="flex items-center gap-3"><span className="text-primary">•</span> Canadian Integration</li>
+                </ul>
+              </article>
             </div>
           </div>
         </section>
 
-        {/* About Us Section */}
-        <section className="py-32 relative overflow-hidden bg-surface reveal-on-scroll">
+        {/* Established Authority */}
+        <section className="py-24 bg-surface">
           <div className="container mx-auto px-12">
-            <div className="flex flex-col md:flex-row gap-20 items-center">
-              <div className="w-full md:w-1/2 relative reveal-on-scroll">
-                <div className="aspect-[4/5] bg-surface-container-high relative z-10 overflow-hidden rounded-sm">
-                  <img className="w-full h-full object-cover" src="img1.jpeg" alt="Portrait of a confident senior executive in a dark tailored suit" />
-                </div>
-                <div className="absolute -bottom-10 -right-10 w-full h-full border border-primary/20 -z-0"></div>
-                <div className="absolute top-1/2 -left-20 transform -translate-y-1/2 hidden lg:block">
-                  <span className="text-[12rem] font-headline font-bold text-surface-container-high opacity-40 select-none">1992</span>
-                </div>
-              </div>
-              <div className="w-full md:w-1/2 reveal-on-scroll">
-                <span className="text-primary font-label uppercase tracking-[0.3em] text-sm mb-6 block">Our Heritage</span>
-                <h2 className="text-5xl font-headline font-bold text-on-background mb-8">Architects of Opportunity Across Six Continents</h2>
-                <div className="space-y-6 text-on-surface-variant text-lg leading-relaxed">
-                  <p>For over three decades, Larenj International has stood as the quiet force behind the global expansion of Fortune 500 enterprises and the sovereign mobility of high-net-worth individuals.</p>
-                  <p>Our approach transcends standard consulting. We treat every client engagement as a sovereign archive—a dedicated repository of expertise, legal mastery, and strategic foresight tailored to the specific geopolitical landscape of their ambition.</p>
-                </div>
-                <div className="mt-12 grid grid-cols-2 gap-8 border-t border-outline-variant/15 pt-12">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+              <div className="lg:col-span-7 space-y-8">
+                <span className="text-primary font-bold tracking-[0.3em] uppercase text-sm">Established Authority</span>
+                <h2 className="text-5xl font-headline font-bold text-on-background">World-Class Reach. Ethical Innovation.</h2>
+                <p className="text-on-surface-variant max-w-3xl leading-relaxed text-lg">
+                  Larenj Global has cultivated an impeccable reputation for delivering innovative training and human capital solutions across continents. Our commitment to ethical leadership and global excellence ensures that we don't just fill roles—we build legacies.
+                </p>
+                <div className="grid grid-cols-2 gap-8 pt-8 border-t border-outline-variant/10">
                   <div>
-                    <div className="text-4xl font-headline font-bold text-primary mb-2">45+</div>
-                    <div className="text-sm font-label uppercase tracking-widest text-on-surface-variant">Global Jurisdictions</div>
+                    <p className="text-4xl font-headline font-bold text-primary">15+</p>
+                    <p className="text-xs uppercase tracking-[0.2em] text-on-surface-variant">Years of Experience</p>
                   </div>
                   <div>
-                    <div className="text-4xl font-headline font-bold text-primary mb-2">12k+</div>
-                    <div className="text-sm font-label uppercase tracking-widest text-on-surface-variant">Successful Cases</div>
+                    <p className="text-4xl font-headline font-bold text-primary">400+</p>
+                    <p className="text-xs uppercase tracking-[0.2em] text-on-surface-variant">Global Partners</p>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Why Choose Us */}
-        <section className="py-32 bg-surface-container-low reveal-on-scroll">
-          <div className="container mx-auto px-12">
-            <div className="text-center mb-20 reveal-on-scroll">
-              <h2 className="text-5xl font-headline font-bold text-on-background mb-4">The Sovereign Standard</h2>
-              <p className="text-on-surface-variant font-body max-w-2xl mx-auto">Why the world's most discerning institutions trust Larenj International with their most critical global maneuvers.</p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-[800px]">
-              <div className="md:col-span-8 bg-surface-container-high p-12 rounded-sm relative overflow-hidden flex flex-col justify-end group reveal-on-scroll">
-                <img className="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbRY6qPjpFZMNTokeuDPfnkDM5ES8g0vqbX60e0VaNrciJZ052umVdqsUtL0s08_sDpT_BH6kh9PwPWqwtVDQ6BcEIKhIzBBaaoqMiJWfJnsfzxsvHLEvs7UxBhyd8o5GrdcCEE50X6gpgWVnzLgcOVwHVUmQKQbjOzJmzeM8ReCsQ-VSzWVBPQqxlPiAY4BdEOcidglzbOE-f7CtSlu1TkGcWfLX1-cNXsGbgI6My0kW8wM_HtUYpStHULvjYW0z2j9LXN4EYZg" alt="Close up of high-end textured paper being embossed with a gold seal" />
-                <div className="relative z-10">
-                  <h3 className="text-3xl font-headline font-bold text-primary mb-4">Diplomatic Precision</h3>
-                  <p className="text-lg text-on-surface max-w-xl">Our legal team comprises former diplomats and leading international lawyers who understand the unspoken nuances of global policy.</p>
-                </div>
-              </div>
-              <div className="md:col-span-4 bg-surface p-12 rounded-sm border border-outline-variant/10 flex flex-col justify-center reveal-on-scroll">
-                <span className="material-symbols-outlined text-primary text-5xl mb-6">lock</span>
-                <h3 className="text-2xl font-headline font-bold mb-4">Absolute Discretion</h3>
-                <p className="text-on-surface-variant">Confidentiality is not a policy; it is our foundation. We employ bank-grade security protocols for all client data archives.</p>
-              </div>
-              <div className="md:col-span-4 bg-surface-container p-12 rounded-sm flex flex-col justify-center border border-outline-variant/10 reveal-on-scroll">
-                <span className="material-symbols-outlined text-primary text-5xl mb-6">hub</span>
-                <h3 className="text-2xl font-headline font-bold mb-4">Unified Ecosystem</h3>
-                <p className="text-on-surface-variant">Consulting, Immigration, and Employment are not siloed; they work in concert to provide a 360-degree global mobility strategy.</p>
-              </div>
-              <div className="md:col-span-8 bg-surface-container p-12 rounded-sm relative overflow-hidden flex flex-col justify-center group reveal-on-scroll">
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent"></div>
-                <div className="relative z-10">
-                  <h3 className="text-3xl font-headline font-bold text-on-background mb-4">Institutional Resilience</h3>
-                  <p className="text-lg text-on-surface-variant max-w-2xl">We don't just solve today's challenges; we build the frameworks that ensure your global presence is resilient against future geopolitical shifts.</p>
+              <div className="lg:col-span-5 bg-surface-container-high p-10 rounded-3xl border border-outline-variant/20 shadow-xl">
+                <div className="flex flex-col items-start gap-6">
+                  <span className="text-primary font-bold uppercase tracking-[0.3em] text-xs">From the Archive</span>
+                  <img className="w-full rounded-3xl shadow-2xl" src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80" alt="Book cover" />
+                  <div>
+                    <p className="text-sm uppercase tracking-[0.3em] text-primary mb-2">The Hunters and the Flock Keepers</p>
+                    <p className="text-on-surface font-bold text-xl">By David Ayo Akerele</p>
+                  </div>
+                  <button className="inline-flex items-center gap-2 border border-primary px-6 py-3 rounded-full text-primary font-bold uppercase tracking-[0.2em] hover:bg-primary/10 transition-colors">
+                    Explore Publication
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Latest Insights */}
-        <section className="py-32 bg-surface reveal-on-scroll">
+        {/* Global Footprint */}
+        <section className="py-24 bg-surface-container-low">
           <div className="container mx-auto px-12">
-            <div className="flex justify-between items-end mb-16">
-              <div>
-                <span className="text-primary font-label uppercase tracking-[0.3em] text-sm mb-4 block">The Sovereign Archive</span>
-                <h2 className="text-5xl font-headline font-bold">Latest Insights</h2>
-              </div>
-              <a className="text-on-surface font-bold tracking-widest text-sm border-b border-primary pb-1 hover:text-primary transition-colors" href="#">VIEW FULL ARCHIVE</a>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-headline font-bold text-on-background mb-4">Global Footprint</h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-              <article className="group reveal-on-scroll">
-                <div className="aspect-video bg-surface-container-high mb-8 overflow-hidden rounded-sm">
-                  <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Overhead shot of a premium dark wood desk with a fountain pen, leather notebook, and a pair of reading glasses" />
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
+              {[
+                { title: 'Canada', subtitle: 'Headquarters' },
+                { title: 'North America', subtitle: 'Operations' },
+                { title: 'Africa', subtitle: 'Growth Center' },
+                { title: 'Rest of World', subtitle: 'Strategic Alliances' },
+              ].map((item) => (
+                <div key={item.title} className="aspect-square rounded-3xl bg-surface border border-outline-variant flex flex-col items-center justify-center text-center p-6 transition-all hover:border-primary">
+                  <p className="text-primary font-bold text-xl mb-2">{item.title}</p>
+                  <p className="text-xs uppercase tracking-[0.2em] text-on-surface-variant">{item.subtitle}</p>
                 </div>
-                <span className="text-xs font-label uppercase tracking-[0.2em] text-primary-container mb-3 block">Global Policy</span>
-                <h4 className="text-2xl font-headline font-bold text-on-background group-hover:text-primary transition-colors leading-tight mb-4">Navigating the 2024 EU Residency Amendments</h4>
-                <p className="text-on-surface-variant line-clamp-3">A deep dive into how the latest policy shifts in the Schengen zone impact high-net-worth residency applications...</p>
-              </article>
-              <article className="group reveal-on-scroll">
-                <div className="aspect-video bg-surface-container-high mb-8 overflow-hidden rounded-sm">
-                  <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" alt="Two executives shaking hands in a high-rise office with large glass windows overlooking a modern city skyline" />
-                </div>
-                <span className="text-xs font-label uppercase tracking-[0.2em] text-primary-container mb-3 block">Strategic Enterprise</span>
-                <h4 className="text-2xl font-headline font-bold text-on-background group-hover:text-primary transition-colors leading-tight mb-4">Corporate Inversion in the Middle Eastern Markets</h4>
-                <p className="text-on-surface-variant line-clamp-3">Analyzing the tax benefits and operational logistics of relocating corporate headquarters to the UAE and Qatar...</p>
-              </article>
-              <article className="group reveal-on-scroll">
-                <div className="aspect-video bg-surface-container-high mb-8 overflow-hidden rounded-sm">
-                  <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://images.unsplash.com/photo-1542744173-05336fcc7ad4?auto=format&fit=crop&w=1200&q=80" alt="A legal gavel resting on a stack of aged leather-bound books in a dim, prestigious law office" />
-                </div>
-                <span className="text-xs font-label uppercase tracking-[0.2em] text-primary-container mb-3 block">Talent Mobility</span>
-                <h4 className="text-2xl font-headline font-bold text-on-background group-hover:text-primary transition-colors leading-tight mb-4">The Future of Executive Work Visas in the Tech Era</h4>
-                <p className="text-on-surface-variant line-clamp-3">How specialized knowledge visas are evolving to meet the demands of AI-driven global enterprise sectors...</p>
-              </article>
+              ))}
             </div>
+
           </div>
         </section>
 
         {/* CTA Section */}
-        <section className="py-32 bg-surface-container-low border-y border-outline-variant/10 reveal-on-scroll">
+        <section className="py-24 bg-primary-container text-on-primary-container">
           <div className="container mx-auto px-12 text-center">
-            <h2 className="text-6xl font-headline font-bold mb-12 italic">Begin Your Sovereign Journey</h2>
-            <button className="bg-gradient-to-r from-primary to-primary-container px-16 py-6 rounded-md text-on-primary font-bold tracking-[0.2em] text-xl uppercase shadow-2xl hover:scale-105 transition-transform">
-              Inquire Privately
-            </button>
+            <h2 className="text-5xl font-headline font-bold mb-6">Ready to Lead the Future?</h2>
+            <p className="max-w-2xl mx-auto text-lg leading-relaxed mb-10">
+              Join the thousands of professionals and organizations that have elevated their potential through Larenj’s world-class training.
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <a className="bg-surface text-primary px-10 py-4 rounded-full font-bold uppercase tracking-[0.2em] hover:bg-surface/90 transition-colors" href="#">
+                Get Started Today
+              </a>
+              <a className="border border-on-primary-container px-10 py-4 rounded-full font-bold uppercase tracking-[0.2em] hover:bg-on-primary-container/10 transition-colors" href="#">
+                Contact Our Advisors
+              </a>
+            </div>
           </div>
         </section>
       </main>
